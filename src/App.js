@@ -15,6 +15,7 @@ class App extends React.Component {
   addItem = event => {
     event.preventDefault();
     this.setState(oldState => ({
+      value: '',
       items: [...oldState.items, this.state.value],
     }));
   };
